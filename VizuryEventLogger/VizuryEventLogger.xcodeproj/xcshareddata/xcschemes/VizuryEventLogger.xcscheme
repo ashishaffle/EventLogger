@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1150"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1AF28CC4244F583C009C4872"
+               BuildableName = "VizuryEventLogger.framework"
+               BlueprintName = "VizuryEventLogger"
+               ReferencedContainer = "container:VizuryEventLogger.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1AF28CC4244F583C009C4872"
+            BuildableName = "VizuryEventLogger.framework"
+            BlueprintName = "VizuryEventLogger"
+            ReferencedContainer = "container:VizuryEventLogger.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "set -euo pipefail&#10; &#10;xcconfig=$(mktemp /tmp/static.xcconfig.XXXXXX)&#10;trap &apos;rm -f &quot;$xcconfig&quot;&apos; INT TERM HUP EXIT&#10; &#10;# For Xcode 12 make sure EXCLUDED_ARCHS is set to arm architectures otherwise&#10;# the build will fail on lipo due to duplicate architectures.&#10; &#10;CURRENT_XCODE_VERSION=&quot;$(xcodebuild -version | grep &quot;Xcode&quot; | cut -d&apos; &apos; -f2 | cut -d&apos;.&apos; -f1)00&quot;&#10;CURRENT_XCODE_BUILD=$(xcodebuild -version | grep &quot;Build version&quot; | cut -d&apos; &apos; -f3)&#10;&#10;echo &quot;EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64__XCODE_${CURRENT_XCODE_VERSION}__BUILD_${CURRENT_XCODE_BUILD} = arm64 arm64e armv7 armv7s armv6 armv8&quot; &gt;&gt; $xcconfig&#10; &#10;echo &apos;EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64__XCODE_&apos;${CURRENT_XCODE_VERSION}&apos; = $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64__XCODE_$(XCODE_VERSION_MAJOR)__BUILD_$(XCODE_PRODUCT_BUILD_VERSION))&apos; &gt;&gt; $xcconfig&#10;echo &apos;EXCLUDED_ARCHS = $(inherited) $(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_$(EFFECTIVE_PLATFORM_SUFFIX)__NATIVE_ARCH_64_BIT_$(NATIVE_ARCH_64_BIT)__XCODE_$(XCODE_VERSION_MAJOR))&apos; &gt;&gt; $xcconfig&#10;&#10;export XCODE_XCCONFIG_FILE=&quot;$xcconfig&quot;&#10;carthage &quot;$@&quot;&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "1AF28CC4244F583C009C4872"
+                     BuildableName = "VizuryEventLogger.framework"
+                     BlueprintName = "VizuryEventLogger"
+                     ReferencedContainer = "container:VizuryEventLogger.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;">
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
+   </ArchiveAction>
+</Scheme>
