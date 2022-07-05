@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DeviceIdentificationManager.h"
 
 @interface DeviceIdentificationManager : NSObject
 

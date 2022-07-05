@@ -1293,12 +1293,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32DE004451A3FF5AB84CA0E2 /* Pods-VizuryEventLogger.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					arm64,
-					x86_64,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -1328,12 +1323,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F0E5F2E6AD8D062368E2BFA1 /* Pods-VizuryEventLogger.release.xcconfig */;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD)",
-					arm64,
-					x86_64,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD)";
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

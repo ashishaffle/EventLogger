@@ -25,7 +25,7 @@ static BOOL isCachingEnabled = false;
 static NSString *PACKAGE_ID = nil;
 static NSString* fcmRegistrationToken = nil;
 
-+ (void)logEvent:(NSString*)event WithAttributes:(NSDictionary *)eventDictionary {
++ (void)  logEvent:(NSString*)event WithAttributes:(NSDictionary *)eventDictionary {
     @try {
         if (![self getPackageId]) {
             [VizLog logMessage:@"Campaign id missing. Please initialise event logger before logging events"];
