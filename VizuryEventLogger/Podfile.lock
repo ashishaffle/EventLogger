@@ -50,6 +50,11 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.7.2):
     - GoogleUtilities/Logger
+  - GTMSessionFetcher (2.0.0):
+    - GTMSessionFetcher/Full (= 2.0.0)
+  - GTMSessionFetcher/Core (2.0.0)
+  - GTMSessionFetcher/Full (2.0.0):
+    - GTMSessionFetcher/Core
   - nanopb (1.30906.0):
     - nanopb/decode (= 1.30906.0)
     - nanopb/encode (= 1.30906.0)
@@ -60,6 +65,7 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Messaging
+  - GTMSessionFetcher
 
 SPEC REPOS:
   trunk:
@@ -71,6 +77,7 @@ SPEC REPOS:
     - FirebaseMessaging
     - GoogleDataTransport
     - GoogleUtilities
+    - GTMSessionFetcher
     - nanopb
     - PromisesObjC
     - Protobuf
@@ -84,10 +91,11 @@ SPEC CHECKSUMS:
   FirebaseMessaging: 5eca4ef173de76253352511aafef774caa1cba2a
   GoogleDataTransport: f56af7caa4ed338dc8e138a5d7c5973e66440833
   GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
+  GTMSessionFetcher: 681175626052e03fdde7952f7e9c7a9785719506
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   Protobuf: 9e88c1e667d75aa2491d211f26ccddde4e8ad4cf
 
-PODFILE CHECKSUM: 59a094913c7c79bf5b9040b7a31209e1c81f0648
+PODFILE CHECKSUM: 9612675cf28d7cfaeb8c3974bb4a05ba77c2e76c
 
 COCOAPODS: 1.11.3

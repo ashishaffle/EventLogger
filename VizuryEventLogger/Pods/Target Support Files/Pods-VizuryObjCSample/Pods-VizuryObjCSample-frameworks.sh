@@ -180,12 +180,14 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/PromisesObjC-iOS9.0/FBLPromises.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Protobuf-iOS9.0/Protobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/nanopb-iOS9.0/nanopb.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/GoogleUtilities-iOS9.0/GoogleUtilities.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PromisesObjC-iOS9.0/FBLPromises.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Protobuf-iOS9.0/Protobuf.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/nanopb-iOS9.0/nanopb.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

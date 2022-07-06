@@ -7,12 +7,12 @@
 		<key>MyNotificationService.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>40</integer>
+			<integer>41</integer>
 		</dict>
 		<key>SwiftTestDemo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>39</integer>
+			<integer>40</integer>
 		</dict>
 		<key>UniversalEventLogger.xcscheme_^#shared#^_</key>
 		<dict>
@@ -27,7 +27,7 @@
 		<key>VizuryObjCSample.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>41</integer>
+			<integer>42</integer>
 		</dict>
 		<key>VizuryRichNotification.xcscheme_^#shared#^_</key>
 		<dict>

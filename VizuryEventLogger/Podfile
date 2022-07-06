@@ -7,6 +7,8 @@ target 'VizuryEventLogger' do
 
   # Pods for VizuryEventLogger
     pod 'Firebase/Messaging'
+    pod 'GTMSessionFetcher'
+    
 
 end
 
